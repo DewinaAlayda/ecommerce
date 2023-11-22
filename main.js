@@ -67,7 +67,7 @@ btntampilkeranjang.addEventListener("click", () => {
 })
 
 const searchbar = document.querySelector(".searchbar");
-searchbBar.addEventListener("keyup", (e) => {
+searchBar.addEventListener("keyup", (e) => {
     let namaBarang = e.target.value.tolowerCase();
     const hasilcari = barang[0].filter((item) => {
         return item.title.toLowerCase().includes(namaBarang);
