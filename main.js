@@ -5,7 +5,7 @@ const barang =[];
 const ambilData = async () => {
   const response = await fetch(url);
   const data = await response.json();
-
+  barang.push(data)
   let totalkeranjang= document.getElementsByClassName("cart_count")[0]
   const divProduk = document.getElementsByClassName("div-produk");
 
